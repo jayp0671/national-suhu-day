@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/national-gf-day/static/css/main.a544da5d.css",
+    "main.js": "/national-gf-day/static/js/main.9e619f0b.js",
+    "index.html": "/national-gf-day/index.html",
+    "main.a544da5d.css.map": "/national-gf-day/static/css/main.a544da5d.css.map",
+    "main.9e619f0b.js.map": "/national-gf-day/static/js/main.9e619f0b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a544da5d.css",
+    "static/js/main.9e619f0b.js"
+  ]
+}
