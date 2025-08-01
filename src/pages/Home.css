@@ -1,0 +1,97 @@
+.home-page {
+  position: relative;
+  background: linear-gradient(to bottom right, #ffe4e1, #fff0f5);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 30px;
+  z-index: 2;
+}
+
+.flicker-text {
+  color: #ff1493;
+  font-size: 2.8rem;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  from { opacity: 1; text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff1493; }
+  to   { opacity: 0.8; text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493; }
+}
+
+.typing-text {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #8b008b;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(40, end) forwards;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 20px;
+  color: #a52a2a;
+}
+
+.petname {
+  font-size: 1rem;
+  color: #c71585;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 28px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+.floating-hearts::before {
+  content: "💖 💗 💘 💝 💓 💞";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: floatUp 15s linear infinite;
+  font-size: 2rem;
+  white-space: nowrap;
+  text-align: center;
+  opacity: 0.3;
+  left: 0;
+  top: 100%;
+}
+
+@keyframes floatUp {
+  0%   { top: 100%; }
+  100% { top: -200%; }
+}
